@@ -1,0 +1,27 @@
+{
+  "name": "redux-observable-state",
+  "version": "0.0.0",
+  "description": "An RxJS observable that emits the latest Redux state",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TalhaAydin/redux-observable-state"
+  },
+  "keywords": ["redux", "observable", "rxjs"],
+  "author": {
+    "name": "Talha Aydin",
+    "email": "tay021@pm.me"
+  },
+  "license": "AGPL-3.0-or-later",
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.2"
+  },
+  "peerDependencies": {
+    "redux": "^4.1.2",
+    "rxjs": "^7.4.0"
+  }
+}

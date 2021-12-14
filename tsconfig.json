@@ -9,6 +9,7 @@
     "module": "CommonJS",
     "moduleResolution": "node",
     "isolatedModules": true,
+    "declaration": true,
     "outDir": "dist"
   },
   "files": ["src/index.ts"]

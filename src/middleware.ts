@@ -1,7 +1,14 @@
 import { AnyAction, Middleware, Reducer } from 'redux'
 import { BehaviorSubject } from 'rxjs'
 
-export const createReduxObservableState = <T>(rootReducer: Reducer<T>) => {
+/**
+ * Creates the Redux middleware and the RxJS observable.
+ *
+ * @param rootReducer - The root reducer you pass to Redux.
+ *
+ * @public
+ */
+export const createObservable = <T>(rootReducer: Reducer<T>) => {
   const _subject = new BehaviorSubject(
     rootReducer(undefined, { type: '@redux-observable-state/init' })
   )

@@ -1,8 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createReduxObservableState = void 0;
+exports.createObservable = void 0;
 var rxjs_1 = require("rxjs");
-var createReduxObservableState = function (rootReducer) {
+/**
+ * Creates the Redux middleware and the RxJS observable.
+ *
+ * @param rootReducer - The root reducer you pass to Redux.
+ *
+ * @public
+ */
+var createObservable = function (rootReducer) {
     var _subject = new rxjs_1.BehaviorSubject(rootReducer(undefined, { type: '@redux-observable-state/init' }));
     var state$ = _subject.asObservable();
     var middleware = function (_a) {
@@ -22,4 +29,4 @@ var createReduxObservableState = function (rootReducer) {
         middleware: middleware,
     };
 };
-exports.createReduxObservableState = createReduxObservableState;
+exports.createObservable = createObservable;

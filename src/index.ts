@@ -1,2 +1,2 @@
-export * from "./middleware" 
-export * from "./pipe"
+export * from './middleware'
+export * from './pipe'

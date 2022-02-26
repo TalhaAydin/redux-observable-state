@@ -21,3 +21,7 @@ export const { state$, middleware } = createObservableState(rootReducer)
 
 After connecting `middleware` to Redux, you can subscribe to the `state$`
 observable.
+
+## API Docs
+
+See the [API Docs](./docs/index.md).
